@@ -1,6 +1,5 @@
-// app/guia/page.tsx o /components/Guia.tsx
 import Image from "next/image";
-import "../styles/globals.css";
+
 
 export default function Guia() {
   return (
