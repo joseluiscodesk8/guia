@@ -53,7 +53,7 @@ export default function Guia() {
 
       {/* Paso 5 */}
       <section className="guia-section">
-        <h2>4. Crear Base de Datos MySQL</h2>
+        <h2>4. Crear Base de Datos Postgres</h2>
         <p>
           Crea una base de datos en SiteGround. Esta tendrá un nombre tipo <strong>hash</strong> que no puede ser modificado. Luego, crea un usuario (también tipo hash), al que puedes asignar una etiqueta identificadora. Asocia este usuario a la base de datos.
         </p>
