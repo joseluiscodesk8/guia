@@ -1,28 +1,8 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 * {
   box-sizing: border-box;
@@ -30,13 +10,69 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* styles/globals.css */
+
+.guia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  max-width: 64rem; /* max-w-4xl */
+  margin: 0 auto;
+  gap: 4rem; /* espacio entre secciones */
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.guia-section {
+  width: 100%;
+}
+
+.guia-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.guia-section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.guia-section code {
+  background-color: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
+
+.guia-section strong {
+  font-weight: 600;
+}
+
+.guia-section img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sección 5: dos imágenes una debajo de la otra */
+.seccion-5-imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .guia-container {
+    padding: 1rem;
+  }
+
+  .guia-section h2 {
+    font-size: 1.25rem;
   }
 }
